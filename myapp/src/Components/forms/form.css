@@ -1,11 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap"); 
-* 
-{
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box ;
-  font-family:"poppins", sans-serif ;
-}
+
 section{
   position: relative;
   width: 100%;
@@ -57,22 +50,23 @@ section .contentbx .formBx
 
 }
 
-
 section .contentbx .formBx h2
 {
   color: #607;
   font-weight: 600;
   font-size: 1.5em;
   width: 250px;
-  margin-bottom: 40px;
-  border-bottom: 3px solid #550955;
+  margin-bottom: 150px;
+  border-bottom: .5px solid #6e136e;
 
 }
+
 
 section .contentbx .formBx .useinput[type=text] {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #607;
+  border-bottom: 1px solid rgb(216, 156, 226);
+  margin-bottom: 150px;
 }
 
 section .contentbx .formBx .inputBx
@@ -112,7 +106,7 @@ section .contentbx .formBx .inputBx input[type="submit"]
   color: #fff;
   outline: none;
   border: none;
-  font-size: 500;
+  font-size: 50p;
   cursor:pointer;
   width: 50%;
   border-radius: 30px;

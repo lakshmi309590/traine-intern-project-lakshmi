@@ -1,7 +1,8 @@
 import React from 'react';
-import { images } from '../../assets/images';
+import images  from '../../assets/images/forgot_pass.jpg';
 import "./forgot.css";
-import { images } from '../assets/images';
+import { Link } from 'react-router-dom';
+
 
 
 const ForgotPass = () => {
@@ -9,7 +10,7 @@ const ForgotPass = () => {
     
     <section>
       <div className='image'>
-      <img src={images.loginBg}></img>
+      <img src={images}></img>
 
       </div>
       <div className='contentbx'>
@@ -25,7 +26,7 @@ const ForgotPass = () => {
             </div>
             
             <div className='inputBx'>
-              <input type="submit" value="submit" name=''></input>
+             <Link to="/Home"><input type="submit" value="submit" name=''></input></Link>
             </div>
             
           </form>

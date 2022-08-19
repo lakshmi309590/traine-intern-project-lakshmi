@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap"); 
+* {margin-right:0px ;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden; 
+    font-size: "poppin",sans-serif; 
+ } 
+.container{
+    display: flex;
+}
+
+.container .Top{
+    background-color: #668ff6;
+    height: 50px;
+    width: 2000px;
+     display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    width: 2000px;
+    
+    
+
+}
+.btn1{
+    margin-right: 20px; 
+     display: flex;
+    justify-content: center; 
+     height: 20px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+
+
+.container .Head
+{
+    display: flex;
+    margin-top:-419px;
+    margin-left: 250px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    color: #535357;
+    font-weight: 100%;
+    font-size: 15px;
+}
+.container .Head p{
+    margin-top: 25px;
+    margin-right: 16px;
+    width: 60px;
+}
+.container .Content{
+    display: flex;
+    justify-content: end;
+    margin-top:400PX;
+    margin-right:800em;
+    font-size: 10px;
+    margin-top: 500px;
+
+}
+.container .btn1
+{padding-right: 4PX;
+
+
+}

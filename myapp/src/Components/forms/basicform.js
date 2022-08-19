@@ -1,10 +1,36 @@
 import React from 'react';
-
+import { Link, useNavigate } from 'react-router-dom';
 import "./form.css";
 import { images } from '../../assets/images';
+import {useEffect,useState} from 'react';
 
 
-const Basicform = () => {
+
+function Basicform(){
+
+  const navigate=useNavigate();
+  const [username,setUsername]=useState("");
+  const[password,setPassword]=useState("");
+
+  const handleChange=event => {
+    setUsername(event.target.value);
+
+    console.log("value is:",event.target.value);
+  };
+
+
+  const handleChange2=event =>{
+    setPassword(event.target.value);
+
+    console.log("value is:",event.target.value);
+  };
+
+
+  function loginClick (){
+      if(username==="admin" && password==="admin"){
+        navigate("/AddFrame")
+      }
+    }
   return (
     
     <section>
@@ -19,18 +45,19 @@ const Basicform = () => {
             <div className='inputBx'>
               
               <span>Username</span>
-              <input type="text" name=""></input>
+              <input type="text" name=""  onChange={handleChange}></input>
             
             </div>
             <div className='inputBx'>
               <span>Password</span>
-              <input type="password" name=""></input>
+              <input type="password" name="" onChange={handleChange2}></input>
             </div>
+          
+            <nav id="lognav">
+            <input type="submit" onClick={loginClick} value="submit" id=" logbutton"/>
+            </nav>
             <div className='inputBx'>
-              <input type="submit" value="Login" name=''></input>
-            </div>
-            <div className='inputBx'>
-              <p>Forgot Password<a href='#'></a></p>
+             <Link to="/Forgot"> <p>Forgot Password</p></Link>
             </div>
           </form>
         </div>

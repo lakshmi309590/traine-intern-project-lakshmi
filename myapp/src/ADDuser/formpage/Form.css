@@ -1,0 +1,110 @@
+ @import url("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap"); 
+.container2{
+    display: flex;
+    
+    
+}
+
+.container2 .Top{
+    background-color: #668ff6;
+    height: 50px;
+    width: 2000px;
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+
+ .Head1
+
+    {
+        width: 100%;
+    background: #f2f5fa;
+    height: 800px;
+    margin-top: 60px;
+    margin-left: -1300px;
+    
+    }
+
+
+
+
+.Head1 .Form1{
+    display:flex;
+    flex-direction: row;
+    float:left;
+    align-items: space-between;
+    justify-content: space-around;
+    margin: 0 134px;
+    background: #f2f5fa;
+    margin-right: 10px;
+    font-size: 10px;
+    
+    
+
+}
+.Head1 .Form2{
+    display:flex;
+    flex-direction: row;
+    float:right;
+    justify-content: space-around;
+    align-items: space-between;
+    margin: 0 -5px;
+    background: #f2f5fa;
+    
+}
+
+
+.Head1 .Form1 input{
+    margin: 1em 0em;
+    margin-right: 2em;
+    padding: 0.5em;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 1px solid black;
+    
+    
+}
+.Head1 .Form1 select{
+    margin: 1.3em 0em;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 1px solid black;
+    padding: 0.4em;
+    background-color: #f2f5fa;
+    color: #696a6e;
+    width: 176px;
+}
+
+
+
+.Head1 .Form2 input{
+    margin: 1em 0em;
+    margin-right: 2em;
+    padding: 0.5em;
+    padding-right: 4.5em;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 1px solid black;
+    
+}
+
+.Head1 .Form1 .Address{
+    padding: 25px;
+}
+   
+
+
+
+.Head1 .Form2 .Submit{
+    margin-top:1em;
+    margin-left: 95px;
+    width: 40px;
+    background-color: #1c1575;
+    border-radius: 20px;
+    padding: 0.5em 3em;
+    color: white;
+} 
+
