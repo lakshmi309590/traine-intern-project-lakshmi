@@ -4,6 +4,7 @@ import './data.css';
 function Dummy() {
   const [data,getData]=useState([]);
    const URL='https://dummyjson.com/users?limit=10&skip=80';
+   const[show,setshow]=useState(true)
 
    useEffect(() => {
        fetchData()
@@ -24,18 +25,24 @@ function Dummy() {
   return (
     
       <table >
+       <div className='Hide'> <button  onClick={()=>setshow(true)}>show</button>
+        <button onClick={()=>setshow(false)}>hide</button></div>
         <thead>
         <tr>
           <th>Name</th>
           <th>Last NAME</th>
-          <th>Nick Name</th>
+          {
+          show?<th>Nick Name</th>:null
+        }
           <th>Age</th>
           <th>Gender</th>
           <th>Email</th>
           <th>Address</th>
           <th>Mob Number</th>
           <th>user name</th>
-          <th>password</th>
+          {
+          show?<th>password</th>:null
+        }
         </tr>
         </thead>
         <tbody>
@@ -44,14 +51,18 @@ function Dummy() {
             <tr key={index}>
               <td>{data.firstName}</td>
               <td>{data.lastName}</td>
-              <td>{data.maidenName}</td>
+              {
+          show?<td>{data.maidenName}</td>:null
+        }
               <td>{data.age}</td>
               <td>{data.gender}</td>
               <td>{data.email}</td>
               <td>{data.address.address}</td>
               <td>{data.phone}</td>   
               <td>{data.username}</td>
-              <td>{data.password}</td>
+              {
+          show?<td>{data.password}</td>:null
+        }
 
 
 

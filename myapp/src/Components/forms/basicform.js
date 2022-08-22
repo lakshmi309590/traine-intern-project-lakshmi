@@ -48,6 +48,7 @@ function Basicform(){
               <input type="text" name=""  onChange={handleChange}></input>
             
             </div>
+
             <div className='inputBx'>
               <span>Password</span>
               <input type="password" name="" onChange={handleChange2}></input>

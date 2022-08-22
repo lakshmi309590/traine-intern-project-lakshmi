@@ -26,7 +26,7 @@ function AddFrame(){
             <div className='Head'>
                  <div className='p'> 
                 <p>Welcome</p><br>
-                
+            
                 </br>
                
                 

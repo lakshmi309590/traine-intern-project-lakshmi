@@ -10,6 +10,17 @@ table{
 
 
 }
+.Hide{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(69, 77, 121);
+  outline: none;
+  border: none;
+
+  cursor:pointer;
+  
+    
+}
 td{
     text-align: left;
     padding: 8px;
